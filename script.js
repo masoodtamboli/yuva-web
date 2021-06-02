@@ -4,6 +4,7 @@ function HospitalName() {
   filter = input.value.toUpperCase();
   table = document.getElementById("myTable");
   tr = table.getElementsByTagName("tr");
+  alert("HI");
   for (i = 0; i < tr.length; i++) {
 
     
