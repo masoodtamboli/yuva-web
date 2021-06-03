@@ -7,12 +7,13 @@ body{
     font-family: 'Roboto', sans-serif;
     background-color: white;
 }
+
 .nav-bg{
     background-color: white;
     box-shadow: 0 0px 30px 0px rgba(0, 0, 0, 0.15);
 }
 .navbar-nav .nav-link{
-    color: #d43c18!important;
+    color: #f7471f!important;
     font-weight: bold;
     font-size: 20px;
 }
@@ -134,7 +135,7 @@ body{
     border: 2px solid #bca8e0;
 }
 #hero .hero-btn:hover{
-    background: #d43c18;
+    background: #f7471f;
     color: white;
     text-decoration: none;
 }
@@ -251,7 +252,7 @@ form input[type="submit"]{
     font-weight: bold;
     padding: 0px 22px;
     background: transparent;
-    color: #d43c18;
+    color: #f7471f;
     transition: 0.3s;
     border-radius: 3px 3px 3px 3px;
     border: white;
@@ -277,23 +278,29 @@ form input[type="submit"]{
   flex-wrap: wrap;
   padding: 43px 40px;
 }
-.wrap-table100 {
-  width: 1100px;
-}
 
 /*//////////////////////////////////////////////////////////////////
 [ Table ]*/
 
-.table100 {
-  background-color: #fff;
-}
-
 table {
   width: 1100px;
+  background-color: white;
+  border-collapse: collapse;
+}
+tr{
+    transition:all .1s ease-in;
+    cursor:pointer;
 }
 th, td {
   font-weight: unset;
   padding: 20px;
+  transition: all 0.1s ease-in-out;
+}
+tr:hover{
+    background: #f7471f;
+    color:white;
+    transform:scale(1.02);
+    box-shadow: 2px 2px 12px rgba(0,0,0,0.2),-1px -1px 8px rgba(0,0,0,0.2);
 }
 .table100-head th {
     padding-left: 10px;
@@ -343,9 +350,9 @@ th, td {
 .table100-head.ver2 th {
   font-family: Lato-Bold;
   font-size: 18px;
-  color: #d43c18;
+  color: #f7471f;
   line-height: 1.4;
-  background-color: transparent;
+
   padding: 20px;
   text-align: center;
 }
@@ -386,6 +393,7 @@ th, td {
 .table100.ver2 .ps__rail-y .ps__thumb-y::before {
   background-color: #cccccc;
 }
+
 /*--List of Hospitals
 .right form{
     margin-top: 30px;
@@ -517,7 +525,7 @@ h3{
     border-radius: 10px 0px 0px 10px;
 }
 .overlay:hover:before{
-    background: #d43c18;
+    background: #f7471f;
     width: 100%;
     border-radius: 10px;
 }
@@ -609,7 +617,7 @@ h3{
 .footer .footer-top .footer-des{
     margin-top: -90px;
     margin-bottom: 15px;
-    background: #d43c18;
+    background: #f7471f;
     color: white;
     border-top: 4px solid #cfcada;
     text-align: center;
@@ -642,7 +650,7 @@ h3{
     transition: 0.3s;
 }
 .footer .footer-top .social-links a:hover{
-    background: #d43c18;
+    background: #f7471f;
     color: white;
     text-decoration: none;
 }
@@ -682,7 +690,7 @@ h3{
     line-height: 1;
 }
 .footer .footer-top .footer-links ul a:hover{
-    color: #d43c18;
+    color: #f7471f;
 }
 .footer .footer-top .footer-joinus form{
     margin-top: 30px;
@@ -705,7 +713,7 @@ h3{
     background: none;
     font-size: 16px;
     padding: 0 20px;
-    background: #d43c18;
+    background: #f7471f;
     color: white;
     transition: 0.3s;
     border-radius: 4;
