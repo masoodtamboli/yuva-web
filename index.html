@@ -18,8 +18,6 @@
       crossorigin="anonymous"
     />
     <link rel="stylesheet" href="main.css">
-    <!--<link rel="stylesheet" type="text/css" href="util1.css">
-    <link rel="stylesheet" href="main1.css">-->
     <!-- Fontawesome -->
     <script src="https://kit.fontawesome.com/0288478d4c.js" crossorigin="anonymous"></script>
     <!-- Google fonts -->
@@ -27,673 +25,244 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
     <!-- Animate.CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   </head>
+
+
   <body>
     <!--- Navbar -->
-
-<section class="colored-sec" id="title">
-      <nav
-        class="navbar navbar-expand-lg navbar-light nav-bg fixed-top py-2"
-        id="mainNav"
-      >
-        <div class="container" id="home">
-          <img
-            src="./assets/yuva.png"
-            class="image-fluid"
-            width="70px"
-            alt=""
-          />
-          <a
-            class="navbar-brand"
-            href="#"
-            style="color: #d43c18; font-weight: bold; font-size: 28px"
-            >&nbspYUVA</a
-          >
-          <button
-            class="navbar-toggler navbar-toggler-right"
-            type="button"
-            data-toggle="collapse"
-            data-target="#myNavbar"
-            aria-control="myNavbar"
-            aria-expanded="false"
-            area-label="Toggel navigation"
-          >
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="myNavbar">
-            <ul class="navbar-nav ml-auto my-2my-lg-0">
-              <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
-              <li class="nav-item">
-                <a class="nav-link" href="#hospital">List of Hospitals</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#about">About Us</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#work">Work</a>
-              </li>
-
     <nav class="navbar navbar-expand-lg navbar-light nav-bg fixed-top py-2"
     id="mainNav">
     <div class="container" id="home">
         <img src="./assets/yuva.png" class="image-fluid" width="70px" alt="">
-        <a class="navbar-brand "href="#" style="color: #f7471f; font-weight: bold; font-size: 28px;"  >&nbspYUVA</a>
+        <a class="navbar-brand "href="#" style="color: #d43c18; font-weight: bold; font-size: 28px;"  >&nbspYUVA</a>
         <button class="navbar-toggler navbar-toggler-right"type="button"
         data-toggle="collapse"data-target="#myNavbar"aria-control="myNavbar"
         aria-expanded="false"area-label="Toggel navigation">
-      <span class="navbar-toggler-icon"></span>
-      </button>
+        <span class="navbar-toggler-icon"></span>
+        </button>
       <div class="collapse navbar-collapse"id="myNavbar">
           <ul class="navbar-nav ml-auto my-2my-lg-0">
-            <li class="nav-item"><a class="nav-link" href="#" style="">Home</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
             <li class="nav-item"><a class="nav-link" href="#hospital">List of Hospitals</a></li>
             <li class="nav-item"><a class="nav-link" href="#about">About Us</a></li>
             <li class="nav-item"><a class="nav-link" href="#work">Work</a></li>
-            <!-- <li class="nav-item"><a class="nav-link" href="#">Our Team</a></li> -->
             <li class="nav-item"><a class="nav-link" href="#contact">Contact Us</a></li>
           </ul>
       </div>
     </div>
     </nav>
+    <!--- End of Navbar-->
 
-              <li class="nav-item">
-                <a class="nav-link" href="#contact">Contact Us</a>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </nav>
-
-      <div class="container-fluid">
-        <!--- Navbar -->
-
-        <div id="hero" class="d-flex justify-content-center align-items-center">
-          <!-- Nav Bar -->
-
-          <!-- Title -->
-          <div class="row">
-            <div class="col-lg-6 title-content">
-              <h1 class="title-h1">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-              </h1>
-
-              <a
-                type="button"
-                href="#hospital"
-                class="btn hero-btn animate__animated animate__backInUp"
-              >
-                <i class="fas fa-hospital-symbol"></i> Find Hospitals
-              </a>
+    <!--H Section-->
+    <div class="container-fluid">
+        <div id="hero" class="d-flex justify-content-center align-items-center">\
+            <div class="row">
+                <div class="col-lg-6 title-content">
+                    <h1 class="title-h1">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    </h1>
+                    <a type="button" href="#hospital" class="btn hero-btn animate__animated animate__backInUp">
+                        <i class="fas fa-hospital-symbol"></i> Find Hospitals
+                    </a>
+                </div>
+                <div class="col-lg-6 dog-div">
+                    <img class="image" src="" alt="doctor-img" />
+                </div>
             </div>
-            <div class="col-lg-6 dog-div">
-              <img
-                class="image"
-                src="data:image/jpeg;base64,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"
-                alt="doctor-img"
-              />
-            </div>
-          </div>
         </div>
-      </div>
-    </section>
-
+    </div>
     <!--End of H Section-->
 
-    <br /><br /><br />
+    <br><br><br>
 
-    <!-- Hospitals section -->
+    <!-- HOSPITAL SECTION -->
+    <h3 style="color: black;font-size: 25px;text-align: center;font-weight: bold;text-transform: uppercase;">List of Hospitals</h3>
+    <p style="font-size: 25px;text-align: center;color: black;">Here we can monitor the occupancies of hospitals</p>
+    
+    <br><br>
 
-    <div id="hospital">
-      <h3
-        style="
-          color: black;
-          font-size: 25px;
-          text-align: center;
-          font-weight: bold;
-          text-transform: uppercase;
-        "
-      >
-        List of Hospitals
-      </h3>
-      <p style="font-size: 25px; text-align: center; color: black">
-        Here we can monitor the occupancies of hospitals
-      </p>
-      <br /><br />
-      <input
-        type="text"
-        id="Input_name"
-        onkeyup="HospitalName()"
-        placeholder="Search for Hospital names.."
-        style="
-          border-radius: 8px;
-          box-shadow: 0 0px 30px 0px rgba(0, 0, 0, 0.15);
-        "
-      />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-      <input
-        type="text"
-        id="Input_location"
-        onkeyup="HospitalLocation()"
-        placeholder="Search for Hospital location.."
-        style="
-          border-radius: 8px;
-          box-shadow: 0 0px 30px 0px rgba(0, 0, 0, 0.15);
-        "
-      />
-      <br /><br />
+    <input type="text" id="Input_name" onkeyup="HospitalName()" placeholder="Search for Hospital names.." style="border-radius: 8px;box-shadow: 0 0px 30px 0px rgba(0, 0, 0, 0.15);">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <input type="text" id="Input_location" onkeyup="HospitalLocation()" placeholder="Search for Hospital location.."style="border-radius: 8px;box-shadow: 0 0px 30px 0px rgba(0, 0, 0, 0.15);">
 
-      <div class="limiter">
+    <br><br>
+
+    <div class="limiter" id="hospital" >
         <div class="container-table100">
-
-          <div class="wrap-table100">
-            <div class="table100 ver2 m-b-110">
-              <div class="table100-body js-pscroll">
-                <table id="myTable">
-                  <div class="table100-head">
-                    <thead>
-                      <tr
-                        class="row100 head"
-                        style="
-                          color: #d43c18;
-                          background-color: transparent;
-                          padding: 5px;
-                          box-shadow: 0 5px 20px 0px rgba(0, 0, 0, 0.1);
-                          font-weight: bold;
-                        "
-                      >
-                        <th>Sr. No.</th>
-                        <th>Hospital Name</th>
-                        <th>Location</th>
-                        <th>Current Bed Occupancy</th>
-                        <th>Last-Updated</th>
-                      </tr>
-                    </thead>
-                  </div>
-                  <tbody>
-                    <tr class="row100 body">
-                      <td>1</td>
-                      <td>xyz</td>
-                      <td>abc</td>
-                      <td>18</td>
-                      <td>29-05-2021 16:25:18</td>
-                    </tr>
             <div class="wrap-table100">
                 <div class="table100 ver2 m-b-110">
                     <div class="table100-body js-pscroll">
                         <table id="myTable">
                             <div class="table100-head">
-                                <thead >
-                                    <tr class="row100 head" style="color: #f7471f;background-color: transparent;padding: 5px;box-shadow: 0 5px 20px 0px rgba(0, 0, 0, 0.1);font-weight: bold;">
-                                        <th style="background:white;position: sticky;top: 0;">Sr. No.</th>
-                                        <th style="background:white;position: sticky;top: 0;">Hospital Name</th>
-                                        <th style="background:white;position: sticky;top: 0;">Location</th>
-                                        <th style="background:white;position: sticky;top: 0;">Current Bed Occupancy</th>
-                                        <th style="background:white;position: sticky;top: 0;">Last-Updated</th>
+                                <thead>
+                                    <tr class="row100 head"style="color: #d43c18;background-color: transparent;padding: 5px;box-shadow: 0 5px 20px 0px rgba(0, 0, 0, 0.1);font-weight: bold;">
+                                        <th>Sr. No.</th>
+                                        <th>Hospital Name</th>
+                                        <th>Location</th>
+                                        <th>Current Bed Occupancy</th>
+                                        <th>Last-Updated</th>
                                     </tr>
                                 </thead>
                             </div>
                             <tbody>
                                 <tr class="row100 body">
-         
                                     <td>1</td>
                                     <td>xyz</td>
                                     <td>abc</td>
                                     <td>18</td>
                                     <td>29-05-2021 16:25:18</td>
-         
                                 </tr>
     
                                 <tr class="row100 body">
-                                     
                                     <td>2</td>
                                     <td>AKLUJ CRITICAL CARE AND TRAUMA CENTER</td>
                                     <td>abc</td>
                                     <td>18</td>
                                     <td>29-05-2021 16:25:18</td>
-                                     
                                 </tr>
     
                                 <tr class="row100 body">
-                                     
                                     <td>3</td>
                                     <td>xyz</td>
                                     <td>SOLAPUR</td>
                                     <td>18</td>
                                     <td>29-05-2021 16:25:18</td>
-                                     
                                 </tr>
     
                                 <tr class="row100 body">
-                                     
                                     <td>4</td>
                                     <td>AKLUJ CRITICAL CARE AND TRAUMA CENTER</td>
                                     <td>SOLAPUR</td>
                                     <td>18</td>
                                     <td>29-05-2021 16:25:18</td>
-                                     
                                 </tr>
     
                                 <tr class="row100 body">
-                                     
                                     <td>5</td>
                                     <td>AKLUJ CRITICAL CARE AND TRAUMA CENTER</td>
                                     <td>SOLAPUR</td>
                                     <td>18</td>
                                     <td>29-05-2021 16:25:18</td>
-                                     
                                 </tr>
     
                                 <tr class="row100 body">
-                                     
                                     <td>6</td>
                                     <td>AKLUJ CRITICAL CARE AND TRAUMA CENTER</td>
                                     <td>SOLAPUR</td>
                                     <td>18</td>
                                     <td>29-05-2021 16:25:18</td>
-                                     
                                 </tr>
     
                                 <tr class="row100 body">
-                                     
                                     <td>7</td>
                                     <td>AKLUJ CRITICAL CARE AND TRAUMA CENTER</td>
                                     <td>SOLAPUR</td>
                                     <td>18</td>
                                     <td>29-05-2021 16:25:18</td>
-                                     
                                 </tr>
     
                                 <tr class="row100 body">
-                                     
                                     <td>8</td>
                                     <td>AKLUJ CRITICAL CARE AND TRAUMA CENTER</td>
                                     <td>SOLAPUR</td>
                                     <td>18</td>
                                     <td>29-05-2021 16:25:18</td>
-                                     
                                 </tr>
     
                                 <tr class="row100 body">
-                                     
                                     <td>9</td>
                                     <td>AKLUJ CRITICAL CARE AND TRAUMA CENTER</td>
                                     <td>SOLAPUR</td>
                                     <td>18</td>
                                     <td>29-05-2021 16:25:18</td>
-                                     
                                 </tr>
     
                                 <tr class="row100 body">
-                                     
                                     <td>10</td>
                                     <td>AKLUJ CRITICAL CARE AND TRAUMA CENTER</td>
                                     <td>SOLAPUR</td>
                                     <td>18</td>
                                     <td>29-05-2021 16:25:18</td>
-                                     
                                 </tr>
                             </tbody>
                         </table>
                     </div>
                 </div>
             </div>
-
-                    <tr class="row100 body">
-                      <td>2</td>
-                      <td>AKLUJ CRITICAL CARE AND TRAUMA CENTER</td>
-                      <td>abc</td>
-                      <td>18</td>
-                      <td>29-05-2021 16:25:18</td>
-                    </tr>
-
-                    <tr class="row100 body">
-                      <td>3</td>
-                      <td>xyz</td>
-                      <td>SOLAPUR</td>
-                      <td>18</td>
-                      <td>29-05-2021 16:25:18</td>
-                    </tr>
-
-                    <tr class="row100 body">
-                      <td>4</td>
-                      <td>AKLUJ CRITICAL CARE AND TRAUMA CENTER</td>
-                      <td>SOLAPUR</td>
-                      <td>18</td>
-                      <td>29-05-2021 16:25:18</td>
-                    </tr>
-
-                    <tr class="row100 body">
-                      <td>5</td>
-                      <td>AKLUJ CRITICAL CARE AND TRAUMA CENTER</td>
-                      <td>SOLAPUR</td>
-                      <td>18</td>
-                      <td>29-05-2021 16:25:18</td>
-                    </tr>
-
-                    <tr class="row100 body">
-                      <td>6</td>
-                      <td>AKLUJ CRITICAL CARE AND TRAUMA CENTER</td>
-                      <td>SOLAPUR</td>
-                      <td>18</td>
-                      <td>29-05-2021 16:25:18</td>
-                    </tr>
-
-                    <tr class="row100 body">
-                      <td>7</td>
-                      <td>AKLUJ CRITICAL CARE AND TRAUMA CENTER</td>
-                      <td>SOLAPUR</td>
-                      <td>18</td>
-                      <td>29-05-2021 16:25:18</td>
-                    </tr>
-
-                    <tr class="row100 body">
-                      <td>8</td>
-                      <td>AKLUJ CRITICAL CARE AND TRAUMA CENTER</td>
-                      <td>SOLAPUR</td>
-                      <td>18</td>
-                      <td>29-05-2021 16:25:18</td>
-                    </tr>
-
-                    <tr class="row100 body">
-                      <td>9</td>
-                      <td>AKLUJ CRITICAL CARE AND TRAUMA CENTER</td>
-                      <td>SOLAPUR</td>
-                      <td>18</td>
-                      <td>29-05-2021 16:25:18</td>
-                    </tr>
-
-                    <tr class="row100 body">
-                      <td>10</td>
-                      <td>AKLUJ CRITICAL CARE AND TRAUMA CENTER</td>
-                      <td>SOLAPUR</td>
-                      <td>18</td>
-                      <td>29-05-2021 16:25:18</td>
-                    </tr>
-                  </tbody>
-                </table>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    
-    
-<!-- List of Hospitals
-<br><br><br><br>
-<section class="right">
-    <h3>List of Hospitals</h3>
-    <p>Here we can monitor the occupancies of hospitals</p>
-    <form>
-        <span style="padding: 90px;"></span>
-        <input type="text" name="Find by name" value="Find by Name">
-        <span style="padding: 5px;"></span>
-        <input type="submit" value="Find">
-        <span style="padding: 150px;"></span>
-        <input type="text" name="Find by Locality" value="Find by Locality">
-        <span style="padding: 5px;"></span>
-        <input type="submit" value="Find">
-    </form>
-    <form>
-        <span style="padding: 90px;"></span>
-        <input type="text" name="Find by pin" value="Find by Pin">
-        <span style="padding: 5px;"></span>
-        <input type="submit" value="Find">
-    </form><br><br><br>
-<table>
-    <tr>
-        <th>Sr. No.</th>
-        <th>Hospital Name</th>
-        <th>Location</th>
-        <th>Current Bed Occupancy</th>
-        <th>Last-Updated</th>
-    </tr>
-    <tr>
-        <td>1</td>
-        <td>AKLUJ CRITICAL CARE AND TRAUMA CENTER</td>
-        <td>SOLAPUR</td>
-        <td>18</td>
-        <td>29-05-2021 16:25:18</td>
-    </tr>
-    <tr>
-        <td>2</td>
-        <td>AKLUJ CRITICAL CARE AND TRAUMA CENTER</td>
-        <td>SOLAPUR</td>
-        <td>18</td>
-        <td>29-05-2021 16:25:18</td>
-    </tr>
-    <tr>
-        <td>3</td>
-        <td>AKLUJ CRITICAL CARE AND TRAUMA CENTER</td>
-        <td>SOLAPUR</td>
-        <td>18</td>
-        <td>29-05-2021 16:25:18</td>
-    </tr>
-    <tr>
-        <td>4</td>
-        <td>AKLUJ CRITICAL CARE AND TRAUMA CENTER</td>
-        <td>SOLAPUR</td>
-        <td>18</td>
-        <td>29-05-2021 16:25:18</td>
-    </tr>
-    <tr>
-        <td>5</td>
-        <td>AKLUJ CRITICAL CARE AND TRAUMA CENTER</td>
-        <td>SOLAPUR</td>
-        <td>18</td>
-        <td>29-05-2021 16:25:18</td>
-    </tr>
-    <tr>
-        <td>6</td>
-        <td>AKLUJ CRITICAL CARE AND TRAUMA CENTER</td>
-        <td>SOLAPUR</td>
-        <td>18</td>
-        <td>29-05-2021 16:25:18</td>
-    </tr>
-    <tr>
-        <td>7</td>
-        <td>AKLUJ CRITICAL CARE AND TRAUMA CENTER</td>
-        <td>SOLAPUR</td>
-        <td>18</td>
-        <td>29-05-2021 16:25:18</td>
-    </tr>
-    <tr>
-        <td>8</td>
-        <td>AKLUJ CRITICAL CARE AND TRAUMA CENTER</td>
-        <td>SOLAPUR</td>
-        <td>18</td>
-        <td>29-05-2021 16:25:18</td>
-    </tr>
-    <tr>
-        <td>9</td>
-        <td>AKLUJ CRITICAL CARE AND TRAUMA CENTER</td>
-        <td>SOLAPUR</td>
-        <td>18</td>
-        <td>29-05-2021 16:25:18</td>
-    </tr>
-    <tr>
-        <td>10</td>
-        <td>AKLUJ CRITICAL CARE AND TRAUMA CENTER</td>
-        <td>SOLAPUR</td>
-        <td>18</td>
-        <td>29-05-2021 16:25:18</td>
-    </tr>
-    </table>
-</section>
-End of List of Hospitals-->
-<!--About Us-->
-<br><br><br><br>
-<section class="mt-3"  id="about">
-    <div class="About Us">
-        <div class="container">
-            <div class="section-title text-center">
-                <h3>About Us</h3>
-                <p>
-                    YUVA is till now
-                    Helped 86 people in Hospitalization
-                    Supplied 126 with essential Medical supplies
-                    Food to many
-                </p>
-            </div>
-            <!---->
-            <div class="row">
-                <div class="col-md-4">
-                    <div class="work-box overlay shadow">
-                        <div class="work-icon">
-                            <i class="fas fa-list"></i>
-                        </div>
-                        <h2>Our Beginning</h2>
-                        <p>
-                            YUVA is till now
-                            Helped 86 people in Hospitalization
-                            Supplied 126 with essential Medical supplies
-                            Food to many
-                        </p>
-                    </div>
-                </div>
-                <!---->
-                <div class="col-md-4">
-                    <div class="work-box overlay shadow">
-                        <div class="work-icon">
-                            <i class="fas fa-list"></i>
-                        </div>
-                        <h2>Our Mission</h2>
-                        <p>
-                            YUVA is till now
-                            Helped 86 people in Hospitalization
-                            Supplied 126 with essential Medical supplies
-                            Food to many
-                        </p>
-                    </div>
-                </div>
-                <!---->
-                <div class="col-md-4">
-                    <div class="work-box overlay shadow">
-                        <div class="work-icon">
-                            <i class="fas fa-list"></i>
-                        </div>
-                        <h2>Our Vision</h2>
-                        <p>
-                            YUVA is till now
-                            Helped 86 people in Hospitalization
-                            Supplied 126 with essential Medical supplies
-                            Food to many
-                        </p>
-                    </div>
-                </div>
-                <!---->
-            </div>
         </div>
     </div>
-</section>
-    <!--About us
-    <section class="mt-5">
-        <div class="container">
-            <div class="row justify-content-center mb-5">
-                <div class="col-md-8 text-center heading-section">
+    <!-- END OF HOSPITAL SECTION -->
+
+
+    <!--About Us-->
+
+    <br><br><br><br>
+
+    <section class="mt-3"  id="about">
+        <div class="About Us">
+            <div class="container">
+                <div class="section-title text-center">
                     <h3>About Us</h3>
-                    <h2 class="mb-3">Our Mission | Vision & Plans</h2>
+                    <p>
+                        YUVA is till now
+                        Helped 86 people in Hospitalization
+                        Supplied 126 with essential Medical supplies
+                        Food to many
+                    </p>
                 </div>
-            </div>
-       
-            <div class="row tabs mt-4">
-                <div class="col-md-4">
-                    <ul class="nav nav-pills nav-fill d-md-flex d-block 
-                    flex-column">
-                        <li class="nav-item text-left">
-                            <a class="nav-link active py-4"data-toggle="tab"
-                            href="#about-1">About</a>
-                        </li>
-                        <li class="nav-item text-left">
-                            <a class="nav-link py-4" data-toggle="tab"
-                             href="#about-2">Our Beginning</a>
-                        </li>
-                        <li class="nav-item text-left">
-                            <a class="nav-link py-4" data-toggle="tab"
-                            href="#about-3">Our Mission</a>
-                        </li>
-                        <li class="nav-item text-left">
-                            <a class="nav-link py-4" data-toggle="tab" 
-                            href="#about-4">Our Vision</a>
-                        </li>
-                        <li class="nav-item text-left">
-                            <a class="nav-link py-4" data-toggle="tab" 
-                            href="#about-5">Our Plans</a>
-                        </li>
-                    </ul>
-                </div>
-    
-                <div class="col-md-8">
-                    <div class="tab-content">
-                        <div class="tab-pane container p-0 active"id="about-1">
-                <div class="img"style="background-image: url(about-1.jpg);">
-                </div>
-                <h3><a href="#">About Us</a></h3>
-                <p>
-                    YUVA is till now
-                    Helped 86 people in Hospitalization
-                    Supplied 126 with essential Medical supplies
-                    Food to many
-                </p>
-                </div>
-   
-                <div class="tab-pane container p-0"id="about-2">
-                <div class="img" style="background-image: url(about-2.jpg);">
-                </div>
-                <h3><a href="#">Our Beginning</a></h3>
-                <p>
-                    YUVA is till now
-                    Helped 86 people in Hospitalization
-                    Supplied 126 with essential Medical supplies
-                    Food to many
-                </p>
-                </div>
-    
-                <div class="tab-pane container p-0" id="about-3">
-                <div class="img" style="background-image: url(about-3.jpg);">
-                </div>
-                <h3><a href="#">Our Mission</a></h3>
-                <p>
-                    YUVA is till now
-                    Helped 86 people in Hospitalization
-                    Supplied 126 with essential Medical supplies
-                    Food to many
-                </p>
-                </div>
-    
-                <div class="tab-pane container p-0" id="about-4">
-                <div class="img" style="background-image: url(about-4.jpg);">
-                </div>
-                <h3><a href="#">Our Vision</a></h3>
-                <p>
-                    YUVA is till now
-                    Helped 86 people in Hospitalization
-                    Supplied 126 with essential Medical supplies
-                    Food to many
-                </p>
-                </div>
-       
-                <div class="tab-pane container p-0" id="about-5">
-                <div class="img" style="background-image: url(about-5.jpg);">
-                </div>
-                <h3><a href="#">Our Plans</a></h3>
-                <p>
-                    YUVA is till now
-                    Helped 86 people in Hospitalization
-                    Supplied 126 with essential Medical supplies
-                    Food to many
-                </p>
-                </div>
-     
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="work-box overlay shadow">
+                            <div class="work-icon">
+                                <i class="fas fa-list"></i>
+                            </div>
+                            <h2>Our Beginning</h2>
+                            <p>
+                                YUVA is till now
+                                Helped 86 people in Hospitalization
+                                Supplied 126 with essential Medical supplies
+                                Food to many
+                            </p>
+                        </div>
                     </div>
-                </div>
+                    <!---->
+                    <div class="col-md-4">
+                        <div class="work-box overlay shadow">
+                            <div class="work-icon">
+                                <i class="fas fa-list"></i>
+                            </div>
+                            <h2>Our Mission</h2>
+                            <p>
+                                YUVA is till now
+                                Helped 86 people in Hospitalization
+                                Supplied 126 with essential Medical supplies
+                                Food to many
+                            </p>
+                        </div>
+                    </div>
+                    <!---->
+                    <div class="col-md-4">
+                        <div class="work-box overlay shadow">
+                            <div class="work-icon">
+                                <i class="fas fa-list"></i>
+                            </div>
+                            <h2>Our Vision</h2>
+                            <p>
+                                YUVA is till now
+                                Helped 86 people in Hospitalization
+                                Supplied 126 with essential Medical supplies
+                                Food to many
+                            </p>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
-    End of About us-->
-    <!-- Work-->
-    <br><br><br><br><section class="mt-3" id="work">
+    <!-- END OF ABOUT US SECTION -->
+
+    <!-- WORK SECTION-->
+    <br><br><br><br>
+    <section class="mt-3" id="work">
         <div class="work">
             <div class="container">
                 <div class="section-title text-center">
@@ -705,7 +274,6 @@ End of List of Hospitals-->
                         Food to many
                     </p>
                 </div>
-                <!---->
                 <div class="row">
                     <div class="col-md-4">
                         <div class="work-box overlay shadow">
@@ -721,153 +289,45 @@ End of List of Hospitals-->
                             </p>
                         </div>
                     </div>
-                    <!---->
-                <div class="col-md-4">
-                    <div class="work-box overlay shadow">
-                        <div class="work-icon">
-                            <i class="fas fa-band-aid"></i>
+                        <!---->
+                    <div class="col-md-4">
+                        <div class="work-box overlay shadow">
+                            <div class="work-icon">
+                                <i class="fas fa-band-aid"></i>
+                            </div>
+                            <h2>Med</h2>
+                            <p>
+                                YUVA is till now
+                                Helped 86 people in Hospitalization
+                                Supplied 126 with essential Medical supplies
+                                Food to many
+                            </p>
                         </div>
-                        <h2>Med</h2>
-                        <p>
-                            YUVA is till now
-                            Helped 86 people in Hospitalization
-                            Supplied 126 with essential Medical supplies
-                            Food to many
-                        </p>
                     </div>
-                </div>
-                    <!---->
-                <div class="col-md-4">
-                    <div class="work-box overlay shadow">
-                        <div class="work-icon">
-                            <i class="fas fa-hospital-symbol    "></i>
+                    <div class="col-md-4">
+                        <div class="work-box overlay shadow">
+                            <div class="work-icon">
+                                <i class="fas fa-hospital-symbol    "></i>
+                            </div>
+                            <h2>Hospital</h2>
+                            <p>
+                                YUVA is till now
+                                Helped 86 people in Hospitalization
+                                Supplied 126 with essential Medical supplies
+                                Food to many
+                            </p>
                         </div>
-                        <h2>Hospital</h2>
-                        <p>
-                            YUVA is till now
-                            Helped 86 people in Hospitalization
-                            Supplied 126 with essential Medical supplies
-                            Food to many
-                        </p>
                     </div>
-                </div>
-                <!---->
                 </div>
             </div>
         </div>
     </section>
-    <!-- End of work-->
-    <!-- Our Team -->
-<!--
-    <br><br><br><section class="team">
-        <div class="container">
-            <div class="section-title">
-                <h2 class="text-center">Our Team</h2>
-                <p class="text-center">
-                    YUVA is till now
-                    Helped 86 people in Hospitalization
-                </p>
-            </div>
-            <div class="row">
-                <div class="col-xl-3 col-lg-4 col-md-6">
-                    <div class="team-1">
-                        <div class="pic">
-                            <img src="img.jpg" class="img-fluid" alt="">
-                        </div>
-                        <div class="team-info">
-                            <h4>Name</h4>
-                            <span>Specification</span>
-                            <div class="social">
-                                <a href="">
-                                    <i class="fab fa-facebook"></i>
-                                </a>
-                                <a href="">
-                                    <i class="fab fa-instagram"></i>
-                                </a>
-                                <a href="">
-                                    <i class="fab fa-linkedin"></i>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-              
-                <div class="col-xl-3 col-lg-4 col-md-6">
-                    <div class="team-1">
-                        <div class="pic">
-                            <img src="img.jpg" class="img-fluid" alt="">
-                        </div>
-                        <div class="team-info">
-                            <h4>Name</h4>
-                            <span>Specification</span>
-                            <div class="social">
-                                <a href="">
-                                    <i class="fab fa-facebook"></i>
-                                </a>
-                                <a href="">
-                                    <i class="fab fa-instagram"></i>
-                                 </a>
-                                <a href="">
-                                    <i class="fab fa-linkedin"></i>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            
-                <div class="col-xl-3 col-lg-4 col-md-6">
-                    <div class="team-1">
-                        <div class="pic">
-                            <img src="img.jpg" class="img-fluid" alt="">
-                        </div>
-                        <div class="team-info">
-                            <h4>Name</h4>
-                            <span>Specification</span>
-                            <div class="social">
-                                <a href="">
-                                    <i class="fab fa-facebook"></i>
-                                </a>
-                                <a href="">
-                                    <i class="fab fa-instagram"></i>
-                                </a>
-                                <a href="">
-                                    <i class="fab fa-linkedin"></i>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-             
-                <div class="col-xl-3 col-lg-4 col-md-6">
-                    <div class="team-1">
-                        <div class="pic">
-                            <img src="img.jpg" class="img-fluid" alt="">
-                        </div>
-                        <div class="team-info">
-                            <h4>Name</h4>
-                            <span>Specification</span>
-                            <div class="social">
-                                <a href="">
-                                    <i class="fab fa-facebook"></i>
-                                </a>
-                                <a href="">
-                                    <i class="fab fa-instagram"></i>
-                                </a>
-                                <a href="">
-                                    <i class="fab fa-linkedin"></i>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-             
-            </div>
-        </div>
-    </section>
-     End of Our Team -->
+    <!-- End of work SECTION-->
+
  
-    <!-- Contact Us -->
-    <br><br><br><br><footer class="footer mt-5">
+    <!-- FOOTER SECTION -->
+    <br><br><br><br>
+    <footer class="footer mt-5">
         <div class="footer-top" id="contact">
             <div class="container">
                 <div class="row">
@@ -932,5 +392,5 @@ End of List of Hospitals-->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="script.js"></script>
     <script src="tab.js"></script>
-  </body>
+ </body>
 </html>
